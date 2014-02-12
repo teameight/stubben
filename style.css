@@ -1,0 +1,97 @@
+/*
+Theme Name: Stubben - based on LEGENDA - 8theme WordPress theme
+Theme URI: http://8theme.com/
+Author: Andrew Mowe, Spencer Hansen
+Author URI: http://team-eight.com
+Template: legenda
+Description: Stubben, US 2014 theme
+Version: 1.0
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@import url("../legenda/style.css");
+
+/* FOLLOW BUTTONS */
+
+.follow {
+    display: table-cell;
+    vertical-align: middle;
+}
+.follow ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.follow li {
+    float: left;
+}
+
+.follow a {
+    display: block;
+}
+
+.follow a:hover {
+    text-decoration: none;
+}
+
+.follow a:before {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    float: left;
+    line-height: 30px;
+    font-size: 30px;
+    margin-right: 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.follow a.youtube:before {
+    content: "\f167";
+}
+
+.follow a.twitter:before {
+    content: "\f099";
+}
+.follow a.facebook:before {
+    content: "\f09a";
+}
+.follow a.rss:before {
+    content: "\f09e";
+}
+
+/* FOOTER MENUS */
+
+.widget_nav_menu {
+    width: 15%;
+    float: left;
+}
+
+.widget_nav_menu li:before {
+    left: 20px;
+    top: 4px;
+}
+
+.widget_nav_menu *, .widget_nav_menu li a {
+    border: none !important;
+    /*border-top: none !important;*/
+}
+
+.widget_nav_menu li a {
+    padding: 5px 20px 5px 30px;
+    font-size: 13px;
+}
+
+.footer-top .widget-title {
+    letter-spacing: 0px;
+    margin-left: 15px;
+    padding: 0;
+    text-align: left;
+    color: #007dbf;
+}
