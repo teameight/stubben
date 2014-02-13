@@ -105,11 +105,16 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
         );
 		$riders = get_posts($args);
 
+        if(!empty($riders)) {
+
         echo '<h4>Riders who like '.get_the_title().'</h4>';
 
         foreach($riders as $rider) {
-//            echo $rider->ID;
-            if(has_post_thumbnail($rider->ID)) echo get_the_post_thumbnail($rider->ID, 'thumbnail');
+//            var_dump($rider);
+            $link = get_post_permalink($rider->ID);
+            if(has_post_thumbnail($rider->ID)) echo '<a href="'.$link.'">'.get_the_post_thumbnail($rider->ID, "thumbnail").'</a>';
+        }
+
         }
 
 		if(etheme_get_custom_field('additional_block') != '') {
