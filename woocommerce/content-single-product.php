@@ -57,9 +57,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
             <div class="short-description">
             <?php
-                $attributes = get_post_meta($post->ID, '_product_attributes', true);
+            // ADD ATTRIBUTES TO PRODUCT DESCRIPTION SECTION
+            $attributes = get_post_meta($post->ID, '_product_attributes', true);
                 foreach($attributes as $attribute) {
-                    echo '<p>'.$attribute['name'].'s : '.$attribute['value'];
+                    echo '<p>'.$attribute['name'].' : '.$attribute['value'];
                 }
             ?>
             </div>
@@ -90,9 +91,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		<?php endif; ?>
 
 	</div>
-	
 	<?php
-
+    // REPLACE DATA TABS CODE WITH RELATED RIDERS
         $args = array(
             'post_type' => 'etheme_portfolio',
             'meta_query' => array(
@@ -116,6 +116,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
         }
 
         }
+
+//    woocommerce_output_product_data_tabs();
 
 		if(etheme_get_custom_field('additional_block') != '') {
 			echo '<div class="sidebar-position-without">';
