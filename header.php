@@ -198,10 +198,9 @@
                     <div class="follow follow-left hidden-phone hidden-tablet a-left">
                         <ul>
                             <li>Follow us:</li>
-                            <li><a href="" class="youtube"></a></li>
-                            <li><a href="" class="twitter"></a></li>
-                            <li><a href="" class="facebook"></a></li>
-                            <li><a href="" class="rss"></a></li>
+                            <li><a href="https://www.youtube.com/user/StubbenNA" class="youtube"></a></li>
+                            <li><a href="https://twitter.com/stubbenna" class="twitter"></a></li>
+                            <li><a href="https://www.facebook.com/StubbenNA" class="facebook"></a></li>
                         </ul>
                     </div>
 
